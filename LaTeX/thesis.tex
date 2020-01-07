@@ -1,0 +1,48 @@
+\documentclass[a4paper, 10pt, DIV=13, BCOR=8mm]{scrbook}
+
+\usepackage[utf8]{inputenc}
+ \usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[a4paper, width=150mm, top=25mm, bottom=25mm, bindingoffset=6mm]{geometry}
+\usepackage{
+  , minted
+  , fancyhdr
+  , blindtext
+  , todonotes
+}
+
+
+\begin{document}
+
+
+\chapter*{Abstract}
+
+\blindtext
+
+\todo{Improve Abstract}
+
+
+\tableofcontents
+
+
+\chapter{Einleitung}
+
+\blindtext
+
+\begin{minted}{java}
+/*
+  Hello World
+ */
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello World!");
+  }
+}
+\end{minted}
+
+\blindtext
+
+\Blinddocument
+
+
+\end{document}
