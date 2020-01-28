@@ -1,7 +1,7 @@
 \documentclass[a4paper, 10pt, DIV=13, BCOR=8mm]{scrbook}
 
 \usepackage[utf8]{inputenc}
- \usepackage[T1]{fontenc}
+\usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 \usepackage[a4paper, width=150mm, top=25mm, bottom=25mm, bindingoffset=6mm]{geometry}
 \usepackage{
@@ -9,7 +9,15 @@
   , fancyhdr
   , blindtext
   , todonotes
+  , amsmath
+  , amssymb
+  , hyperref
 }
+
+
+\newcommand{\hs}[1]{\mintinline{haskell}{#1}}
+
+\bibliographystyle{plain}
 
 
 \begin{document}
@@ -27,8 +35,12 @@
 
 \chapter{Einleitung}
 
+Man kann wie folgt eine wissenschaftliche Publikation zitieren \cite{christiansen2019verifying}.
+
 \blindtext
 
+Das folgende Beispiel zeigt, wie man Code-Beispiele in die Arbeit einbinden kann.
+In diesem Fall wird ein Java-Klasse eingebunden.
 \begin{minted}{java}
 /*
   Hello World
@@ -42,7 +54,26 @@ public class HelloWorld {
 
 \blindtext
 
-\Blinddocument
+Das folgende Beispiel zeigt, wie man gleichungsbasierte Umformungen in Haskell umsetzen kann.
+\begin{align*}
+\hs{and [False, True, True]} &= \hs{foldr (&&) True [False, True, True]}
+\end{align*}
+
+\blindtext
+
+Das folgende Beispiel zeigt, wie man eine mathematische Funktion mit Fallunterscheidung definieren kann.
+\begin{align*}
+& !\colon \mathbb{N} \to \mathbb{N}\\
+& n! = \begin{cases}
+  1 & \mbox{falls}~n = 0\\
+  n * (n-1)! & \mbox{sonst}
+\end{cases}
+\end{align*}
+
+\blindtext
+
+
+\bibliography{thesis}
 
 
 \end{document}
