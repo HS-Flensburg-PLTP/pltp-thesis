@@ -17,6 +17,23 @@
 
 \newcommand{\hs}[1]{\mintinline{haskell}{#1}}
 
+\newcommand{\signature}{%
+\noindent%
+\begin{tabular}{@{}p{5cm}@{}}
+  \\[5\normalbaselineskip]
+  \hline
+  \\[-.75\normalbaselineskip]
+  Ort, Datum
+\end{tabular}\hspace{2ex}
+\begin{tabular}{@{}p{3.1in}@{}}
+  \\[5\normalbaselineskip]
+  \hline
+  \\[-.75\normalbaselineskip]
+  Unterschrift
+\end{tabular}
+}
+
+
 \bibliographystyle{plain}
 
 
@@ -28,6 +45,13 @@
 \blindtext
 
 \todo{Improve Abstract}
+
+
+\chapter*{Eidesstattliche Erklärung}
+
+Ich versichere, dass ich die vorliegende Arbeit ohne fremde Hilfe selbstständig verfasst und nur die angegebenen Quellen benutzt habe.
+
+\signature{}
 
 
 \tableofcontents
