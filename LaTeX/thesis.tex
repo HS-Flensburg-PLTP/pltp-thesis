@@ -5,13 +5,13 @@
 \usepackage[ngerman]{babel}
 \usepackage[a4paper, width=150mm, top=25mm, bottom=25mm, bindingoffset=6mm]{geometry}
 \usepackage{
-  , minted
-  , fancyhdr
-  , blindtext
-  , todonotes
   , amsmath
   , amssymb
+  , blindtext
+  , fancyhdr
   , hyperref
+  , minted
+  , todonotes
 }
 
 
@@ -45,7 +45,7 @@
     \\[2\normalbaselineskip]
     \Huge \textbf{B A C H E L O R - T H E S I S}
   \end{center}
-  
+
 	\begin{tabular}{@{}p{2.5cm}@{} @{}p{12cm}@{}}
     \\[4\normalbaselineskip]
     \large Thema: & \hrule
@@ -80,7 +80,7 @@
 
 \blindtext
 
-\todo{Improve Abstract}
+\todo{Mit dem Befehl todo können Anmerkungen an den Text geschrieben werden, um sich Aufgaben für später zu merken.}
 
 
 \chapter*{Eidesstattliche Erklärung}
@@ -116,7 +116,7 @@ public class HelloWorld {
 
 Das folgende Beispiel zeigt, wie man gleichungsbasierte Umformungen in Haskell umsetzen kann.
 \begin{align*}
-\hs{and [False, True, True]} &= \hs{foldr (&&) True [False, True, True]}
+\text{\hs{and [False, True, True]}} &= \text{\hs{foldr (&&) True [False, True, True]}}
 \end{align*}
 
 \blindtext
